@@ -1,0 +1,47 @@
+{
+  "source": "PubTator", // Source of the annotations, e.g., PubTator is a biomedical concept annotation tool
+  "date": "2021-11-30", 
+  "key": "BioC.key", // Metadata reference or identifier for schema/tool version
+  "documents": [ // List of annotated PubMed documents
+    {
+      "id": "14510914", // PubMed ID of the document
+      "passages": [ // List of passages (e.g., sentences or paragraphs)
+        {
+          "offset": 0, // Character offset of the passage from the start of the document
+          "text": "Congenital hypothyroidism due to a new deletion in the sodium/iodide symporter protein.", // Text content of the passage
+          "annotations": [ // List of entity mentions in this passage
+            {
+              "id": "0", // Unique ID of the annotation within the passage
+              "infons": {
+                "identifier": "D003409", // Unique identifier of the concept (e.g., MeSH, NCBI ID)
+                "type": "DiseaseOrPhenotypicFeature" // Type of the entity (e.g., Gene, Disease, Chemical, etc.)
+              },
+              "text": "Congenital hypothyroidism", // The entity mention text
+              "locations": [
+                {
+                  "offset": 0, // Offset of the entity mention in the passage
+                  "length": 25 // Length of the entity mention
+                }
+              ]
+            }
+            // Additional annotations...
+          ]
+        }
+        // Additional passages...
+      ],
+      "relations": [ // List of relations between annotated entities in the document
+        {
+          "id": "R0", // Unique ID for the relation
+          "infons": {
+            "entity1": "c|DEL|1314_1328|", // Identifier of the first entity (could be concept ID or variant notation)
+            "entity2": "D003409", // Identifier of the second entity
+            "type": "Positive_Correlation", // Type of the relation (e.g., Association, Positive_Correlation, etc.)
+            "novel": "Novel" // Indicates if the relation is a novel finding ("Novel") or known ("No")
+          }
+        }
+        // Additional relations...
+      ]
+    }
+    // Additional documents...
+  ]
+}
