@@ -4,9 +4,9 @@ from typing import List, Tuple, Dict
 from datasets import Dataset, DatasetDict
 
 BIOC_SPLITS = {
-    "train": Path("BioRED/Train.BioC.JSON"),
-    "dev": Path("BioRED/Dev.BioC.JSON"),
-    "test": Path("BioRED/Test.BioC.JSON")
+    "train": Path("BioRED/dataset/Train.BioC.JSON"),
+    "dev": Path("BioRED/dataset/Dev.BioC.JSON"),
+    "test": Path("BioRED/dataset/Test.BioC.JSON")
 }
 
 def extract_entities(doc: Dict) -> Dict[str, str]:
