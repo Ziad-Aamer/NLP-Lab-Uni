@@ -1,0 +1,8 @@
+Defaulting to user installation because normal site-packages is not writeable
+Processing /builddir/build/BUILD/setroubleshoot-3.3.32/src (from -r requirements.txt (line 116))
+{'eval_loss': 5.394277095794678, 'eval_rouge1': 0.12240880521486568, 'eval_rouge2': 0.027530906822405946, 'eval_rougeL': 0.11731951262061664, 'eval_rougeLsum': 0.11688004194661289, 'eval_runtime': 4.5458, 'eval_samples_per_second': 21.998, 'eval_steps_per_second': 1.54, 'epoch': 1.0}
+{'eval_loss': 2.888507604598999, 'eval_rouge1': 0.22382252859845114, 'eval_rouge2': 0.08125731622414793, 'eval_rougeL': 0.19423590518609285, 'eval_rougeLsum': 0.19433197790115359, 'eval_runtime': 4.546, 'eval_samples_per_second': 21.997, 'eval_steps_per_second': 1.54, 'epoch': 2.0}
+{'eval_loss': 1.181071162223816, 'eval_rouge1': 0.2387542610478378, 'eval_rouge2': 0.0915292219679974, 'eval_rougeL': 0.20936616265378544, 'eval_rougeLsum': 0.20875155429134817, 'eval_runtime': 4.5549, 'eval_samples_per_second': 21.954, 'eval_steps_per_second': 1.537, 'epoch': 3.0}
+{'eval_loss': 0.8022861480712891, 'eval_rouge1': 0.2539819970303048, 'eval_rouge2': 0.11669419145086782, 'eval_rougeL': 0.22991317953488877, 'eval_rougeLsum': 0.22927651429623885, 'eval_runtime': 4.4058, 'eval_samples_per_second': 22.698, 'eval_steps_per_second': 1.589, 'epoch': 4.0}
+{'eval_loss': 0.7319707870483398, 'eval_rouge1': 0.259599163652237, 'eval_rouge2': 0.11523399523942465, 'eval_rougeL': 0.23754130984900373, 'eval_rougeLsum': 0.23740317489928414, 'eval_runtime': 4.5431, 'eval_samples_per_second': 22.011, 'eval_steps_per_second': 1.541, 'epoch': 5.0}
+{'train_runtime': 104.0113, 'train_samples_per_second': 19.229, 'train_steps_per_second': 1.202, 'train_loss': 3.807843994140625, 'epoch': 5.0}

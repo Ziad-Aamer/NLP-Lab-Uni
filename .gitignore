@@ -1,0 +1,66 @@
+# Exclude checkpoint directories
+scifive_biored_output/checkpoint-100/
+scifive_biored_output/checkpoint-125/
+scifive_biored_output/checkpoint-100/config.json
+scifive_biored_output/checkpoint-100/generation_config.json
+scifive_biored_output/checkpoint-100/model.safetensors
+scifive_biored_output/checkpoint-100/optimizer.pt
+scifive_biored_output/checkpoint-100/rng_state.pth
+scifive_biored_output/checkpoint-100/scheduler.pt
+scifive_biored_output/checkpoint-100/special_tokens_map.json
+scifive_biored_output/checkpoint-100/tokenizer_config.json
+
+# Exclude all model files and large datasets
+scifive_biored_output/final_model/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Exclude core dump files
+core.*
+
+# Exclude large datasets
+*.json.gz
+*.json.bz2
+*.csv.gz
+*.csv.bz2
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
