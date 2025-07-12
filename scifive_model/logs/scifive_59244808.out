@@ -1,0 +1,8 @@
+Defaulting to user installation because normal site-packages is not writeable
+Processing /builddir/build/BUILD/setroubleshoot-3.3.32/src (from -r requirements.txt (line 116))
+
+=== Evaluation Results ===
+rouge1: 0.2703
+rouge2: 0.1064
+rougeL: 0.2558
+rougeLsum: 0.2659

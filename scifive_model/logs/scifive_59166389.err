@@ -1,0 +1,274 @@
+[INFO] Module GCCcore/14.2.0 loaded.
+[INFO] Module Python/3.13.1 loaded.
+[INFO] Module CUDA/12.6.3 loaded.
+[INFO] This module is based on an Apptainer image
+[INFO] You can pass the image to apptainer by using $PYTORCH_IMAGE
+[INFO] Module PyTorch/nvcr-25.02-py3 loaded.
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/builddir/build/BUILD/setroubleshoot-3.3.32/src'
+
+
+[notice] A new release of pip is available: 24.3.1 -> 25.1.1
+[notice] To update, run: pip install --upgrade pip
+Could not locate the tokenizer configuration file, will try to use the model config instead.
+loading configuration file config.json from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/config.json
+Model config T5Config {
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 1024,
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.53.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading file spiece.model from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/spiece.model
+loading file tokenizer.json from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/tokenizer.json
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at None
+loading file tokenizer_config.json from cache at None
+loading file chat_template.jinja from cache at None
+loading configuration file config.json from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/config.json
+Model config T5Config {
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 1024,
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.53.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading configuration file config.json from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/config.json
+Model config T5Config {
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "classifier_dropout": 0.0,
+  "d_ff": 4096,
+  "d_kv": 64,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 1024,
+  "num_decoder_layers": 24,
+  "num_heads": 16,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "transformers_version": "4.53.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+loading weights file model.safetensors from cache at /home/of651771/.cache/huggingface/hub/models--razent--SciFive-large-Pubmed/snapshots/7dec1ea577acf357ee0f809fc0f7eeefb45aa42d/model.safetensors
+Generate config GenerationConfig {
+  "decoder_start_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 0
+}
+
+All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at razent/SciFive-large-Pubmed.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Generation config file not found, using a generation config created from the model config.
+PyTorch: setting up devices
+The default value for the training argument `--report_to` will change in v5 (from all installed integrations to none). In v5, you will need to use `--report_to all` to get the same behavior as now. You should start updating your code and make this info disappear :-).
+/rwthfs/rz/cluster/home/of651771/NLP-Lab-Uni/Train_Scifive_Biored.py:46: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Seq2SeqTrainer.__init__`. Use `processing_class` instead.
+  trainer = Seq2SeqTrainer(
+The following columns in the Training set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+***** Running training *****
+  Num examples = 400
+  Num Epochs = 5
+  Instantaneous batch size per device = 4
+  Training with DataParallel so batch size has been adjusted to: 16
+  Total train batch size (w. parallel, distributed & accumulation) = 16
+  Gradient Accumulation steps = 1
+  Total optimization steps = 125
+  Number of trainable parameters = 737,668,096
+  0%|          | 0/125 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+/home/of651771/.local/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+  1%|          | 1/125 [00:04<10:16,  4.97s/it]  2%|▏         | 2/125 [00:05<04:41,  2.29s/it]  2%|▏         | 3/125 [00:05<02:53,  1.42s/it]  3%|▎         | 4/125 [00:06<02:02,  1.01s/it]  4%|▍         | 5/125 [00:06<01:34,  1.27it/s]  5%|▍         | 6/125 [00:06<01:17,  1.54it/s]  6%|▌         | 7/125 [00:07<01:06,  1.78it/s]  6%|▋         | 8/125 [00:07<00:59,  1.98it/s]  7%|▋         | 9/125 [00:08<00:59,  1.96it/s]  8%|▊         | 10/125 [00:08<00:54,  2.13it/s]  9%|▉         | 11/125 [00:08<00:50,  2.25it/s] 10%|▉         | 12/125 [00:09<00:48,  2.35it/s] 10%|█         | 13/125 [00:09<00:46,  2.42it/s] 11%|█         | 14/125 [00:10<00:44,  2.48it/s] 12%|█▏        | 15/125 [00:10<00:43,  2.51it/s] 13%|█▎        | 16/125 [00:10<00:42,  2.54it/s] 14%|█▎        | 17/125 [00:11<00:46,  2.32it/s] 14%|█▍        | 18/125 [00:11<00:44,  2.40it/s] 15%|█▌        | 19/125 [00:12<00:43,  2.46it/s] 16%|█▌        | 20/125 [00:12<00:41,  2.50it/s] 17%|█▋        | 21/125 [00:12<00:41,  2.54it/s] 18%|█▊        | 22/125 [00:13<00:40,  2.56it/s] 18%|█▊        | 23/125 [00:13<00:39,  2.57it/s] 19%|█▉        | 24/125 [00:14<00:39,  2.59it/s] 20%|██        | 25/125 [00:14<00:42,  2.36it/s]The following columns in the Evaluation set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+
+***** Running Evaluation *****
+  Num examples = 100
+  Batch size = 16
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.17it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.24it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  1.94it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.81it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.74it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.86it/s][A                                                
+                                             [A 20%|██        | 25/125 [00:19<00:42,  2.36it/s]
+100%|██████████| 7/7 [00:03<00:00,  1.86it/s][A
+                                             [ASaving model checkpoint to scifive_biored_output/checkpoint-25
+Configuration saved in scifive_biored_output/checkpoint-25/config.json
+Configuration saved in scifive_biored_output/checkpoint-25/generation_config.json
+Model weights saved in scifive_biored_output/checkpoint-25/model.safetensors
+tokenizer config file saved in scifive_biored_output/checkpoint-25/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/checkpoint-25/special_tokens_map.json
+/home/of651771/.local/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 21%|██        | 26/125 [00:25<05:51,  3.55s/it] 22%|██▏       | 27/125 [00:25<04:15,  2.60s/it] 22%|██▏       | 28/125 [00:26<03:12,  1.99s/it] 23%|██▎       | 29/125 [00:26<02:24,  1.50s/it] 24%|██▍       | 30/125 [00:27<01:50,  1.17s/it] 25%|██▍       | 31/125 [00:27<01:27,  1.07it/s] 26%|██▌       | 32/125 [00:27<01:11,  1.30it/s] 26%|██▋       | 33/125 [00:28<01:00,  1.53it/s] 27%|██▋       | 34/125 [00:28<00:52,  1.75it/s] 28%|██▊       | 35/125 [00:29<00:46,  1.94it/s] 29%|██▉       | 36/125 [00:29<00:42,  2.10it/s] 30%|██▉       | 37/125 [00:29<00:43,  2.04it/s] 30%|███       | 38/125 [00:30<00:39,  2.19it/s] 31%|███       | 39/125 [00:30<00:37,  2.30it/s] 32%|███▏      | 40/125 [00:31<00:35,  2.38it/s] 33%|███▎      | 41/125 [00:31<00:34,  2.44it/s] 34%|███▎      | 42/125 [00:31<00:33,  2.49it/s] 34%|███▍      | 43/125 [00:32<00:32,  2.53it/s] 35%|███▌      | 44/125 [00:32<00:31,  2.55it/s] 36%|███▌      | 45/125 [00:33<00:31,  2.56it/s] 37%|███▋      | 46/125 [00:33<00:33,  2.33it/s] 38%|███▊      | 47/125 [00:33<00:32,  2.40it/s] 38%|███▊      | 48/125 [00:34<00:31,  2.46it/s] 39%|███▉      | 49/125 [00:34<00:30,  2.50it/s] 40%|████      | 50/125 [00:35<00:29,  2.55it/s]The following columns in the Evaluation set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+
+***** Running Evaluation *****
+  Num examples = 100
+  Batch size = 16
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.18it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.24it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  1.94it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.80it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.61it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.76it/s][A                                                
+                                             [A 40%|████      | 50/125 [00:39<00:29,  2.55it/s]
+100%|██████████| 7/7 [00:03<00:00,  1.76it/s][A
+                                             [ASaving model checkpoint to scifive_biored_output/checkpoint-50
+Configuration saved in scifive_biored_output/checkpoint-50/config.json
+Configuration saved in scifive_biored_output/checkpoint-50/generation_config.json
+Model weights saved in scifive_biored_output/checkpoint-50/model.safetensors
+tokenizer config file saved in scifive_biored_output/checkpoint-50/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/checkpoint-50/special_tokens_map.json
+/home/of651771/.local/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 41%|████      | 51/125 [00:45<04:07,  3.34s/it] 42%|████▏     | 52/125 [00:45<02:59,  2.45s/it] 42%|████▏     | 53/125 [00:46<02:12,  1.83s/it] 43%|████▎     | 54/125 [00:46<01:39,  1.40s/it] 44%|████▍     | 55/125 [00:46<01:16,  1.10s/it] 45%|████▍     | 56/125 [00:47<01:00,  1.13it/s] 46%|████▌     | 57/125 [00:47<00:49,  1.36it/s] 46%|████▋     | 58/125 [00:48<00:42,  1.59it/s] 47%|████▋     | 59/125 [00:48<00:39,  1.68it/s] 48%|████▊     | 60/125 [00:48<00:34,  1.88it/s] 49%|████▉     | 61/125 [00:49<00:31,  2.05it/s] 50%|████▉     | 62/125 [00:49<00:28,  2.19it/s] 50%|█████     | 63/125 [00:50<00:26,  2.30it/s] 51%|█████     | 64/125 [00:50<00:25,  2.39it/s] 52%|█████▏    | 65/125 [00:50<00:24,  2.45it/s] 53%|█████▎    | 66/125 [00:51<00:23,  2.49it/s] 54%|█████▎    | 67/125 [00:51<00:23,  2.52it/s] 54%|█████▍    | 68/125 [00:51<00:22,  2.54it/s] 55%|█████▌    | 69/125 [00:52<00:24,  2.28it/s] 56%|█████▌    | 70/125 [00:52<00:23,  2.36it/s] 57%|█████▋    | 71/125 [00:53<00:22,  2.43it/s] 58%|█████▊    | 72/125 [00:53<00:21,  2.48it/s] 58%|█████▊    | 73/125 [00:54<00:20,  2.52it/s] 59%|█████▉    | 74/125 [00:54<00:20,  2.54it/s] 60%|██████    | 75/125 [00:54<00:19,  2.58it/s]The following columns in the Evaluation set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+
+***** Running Evaluation *****
+  Num examples = 100
+  Batch size = 16
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.17it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.24it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  1.94it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.65it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.64it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.79it/s][A                                                
+                                             [A 60%|██████    | 75/125 [00:59<00:19,  2.58it/s]
+100%|██████████| 7/7 [00:03<00:00,  1.79it/s][A
+                                             [ASaving model checkpoint to scifive_biored_output/checkpoint-75
+Configuration saved in scifive_biored_output/checkpoint-75/config.json
+Configuration saved in scifive_biored_output/checkpoint-75/generation_config.json
+Model weights saved in scifive_biored_output/checkpoint-75/model.safetensors
+tokenizer config file saved in scifive_biored_output/checkpoint-75/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/checkpoint-75/special_tokens_map.json
+Deleting older checkpoint [scifive_biored_output/checkpoint-25] due to args.save_total_limit
+/home/of651771/.local/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 61%|██████    | 76/125 [01:05<02:43,  3.34s/it] 62%|██████▏   | 77/125 [01:05<01:57,  2.45s/it] 62%|██████▏   | 78/125 [01:05<01:26,  1.83s/it] 63%|██████▎   | 79/125 [01:06<01:04,  1.40s/it] 64%|██████▍   | 80/125 [01:06<00:49,  1.09s/it] 65%|██████▍   | 81/125 [01:06<00:38,  1.14it/s] 66%|██████▌   | 82/125 [01:07<00:33,  1.29it/s] 66%|██████▋   | 83/125 [01:07<00:27,  1.52it/s] 67%|██████▋   | 84/125 [01:08<00:23,  1.74it/s] 68%|██████▊   | 85/125 [01:08<00:20,  1.93it/s] 69%|██████▉   | 86/125 [01:09<00:18,  2.10it/s] 70%|██████▉   | 87/125 [01:09<00:17,  2.22it/s] 70%|███████   | 88/125 [01:09<00:15,  2.33it/s] 71%|███████   | 89/125 [01:10<00:14,  2.40it/s] 72%|███████▏  | 90/125 [01:10<00:14,  2.46it/s] 73%|███████▎  | 91/125 [01:11<00:15,  2.26it/s] 74%|███████▎  | 92/125 [01:11<00:14,  2.35it/s] 74%|███████▍  | 93/125 [01:11<00:13,  2.42it/s] 75%|███████▌  | 94/125 [01:12<00:12,  2.47it/s] 76%|███████▌  | 95/125 [01:12<00:11,  2.51it/s] 77%|███████▋  | 96/125 [01:13<00:11,  2.54it/s] 78%|███████▊  | 97/125 [01:13<00:10,  2.56it/s] 78%|███████▊  | 98/125 [01:13<00:10,  2.57it/s] 79%|███████▉  | 99/125 [01:14<00:10,  2.58it/s] 80%|████████  | 100/125 [01:14<00:10,  2.36it/s]The following columns in the Evaluation set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+
+***** Running Evaluation *****
+  Num examples = 100
+  Batch size = 16
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.19it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.25it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  1.95it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.81it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.73it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.86it/s][A                                                 
+                                             [A 80%|████████  | 100/125 [01:19<00:10,  2.36it/s]
+100%|██████████| 7/7 [00:03<00:00,  1.86it/s][A
+                                             [ASaving model checkpoint to scifive_biored_output/checkpoint-100
+Configuration saved in scifive_biored_output/checkpoint-100/config.json
+Configuration saved in scifive_biored_output/checkpoint-100/generation_config.json
+Model weights saved in scifive_biored_output/checkpoint-100/model.safetensors
+tokenizer config file saved in scifive_biored_output/checkpoint-100/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/checkpoint-100/special_tokens_map.json
+Deleting older checkpoint [scifive_biored_output/checkpoint-50] due to args.save_total_limit
+/home/of651771/.local/lib/python3.13/site-packages/torch/nn/parallel/_functions.py:71: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn(
+ 81%|████████  | 101/125 [01:24<01:19,  3.31s/it] 82%|████████▏ | 102/125 [01:25<00:56,  2.47s/it] 82%|████████▏ | 103/125 [01:25<00:40,  1.85s/it] 83%|████████▎ | 104/125 [01:26<00:29,  1.41s/it] 84%|████████▍ | 105/125 [01:26<00:22,  1.10s/it] 85%|████████▍ | 106/125 [01:26<00:16,  1.13it/s] 86%|████████▌ | 107/125 [01:27<00:13,  1.36it/s] 86%|████████▋ | 108/125 [01:27<00:10,  1.59it/s] 87%|████████▋ | 109/125 [01:27<00:08,  1.80it/s] 88%|████████▊ | 110/125 [01:28<00:07,  1.98it/s] 89%|████████▉ | 111/125 [01:28<00:06,  2.13it/s] 90%|████████▉ | 112/125 [01:29<00:06,  2.07it/s] 90%|█████████ | 113/125 [01:29<00:05,  2.20it/s] 91%|█████████ | 114/125 [01:29<00:04,  2.31it/s] 92%|█████████▏| 115/125 [01:30<00:04,  2.39it/s] 93%|█████████▎| 116/125 [01:30<00:03,  2.45it/s] 94%|█████████▎| 117/125 [01:31<00:03,  2.49it/s] 94%|█████████▍| 118/125 [01:31<00:02,  2.53it/s] 95%|█████████▌| 119/125 [01:31<00:02,  2.55it/s] 96%|█████████▌| 120/125 [01:32<00:01,  2.56it/s] 97%|█████████▋| 121/125 [01:32<00:01,  2.57it/s] 98%|█████████▊| 122/125 [01:33<00:01,  2.58it/s] 98%|█████████▊| 123/125 [01:33<00:00,  2.34it/s] 99%|█████████▉| 124/125 [01:33<00:00,  2.42it/s]100%|██████████| 125/125 [01:34<00:00,  2.49it/s]The following columns in the Evaluation set don't have a corresponding argument in `T5ForConditionalGeneration.forward` and have been ignored: output, input. If output, input are not expected by `T5ForConditionalGeneration.forward`,  you can safely ignore this message.
+
+***** Running Evaluation *****
+  Num examples = 100
+  Batch size = 16
+
+  0%|          | 0/7 [00:00<?, ?it/s][A
+ 29%|██▊       | 2/7 [00:00<00:01,  3.18it/s][A
+ 43%|████▎     | 3/7 [00:01<00:01,  2.24it/s][A
+ 57%|█████▋    | 4/7 [00:01<00:01,  1.95it/s][A
+ 71%|███████▏  | 5/7 [00:02<00:01,  1.80it/s][A
+ 86%|████████▌ | 6/7 [00:03<00:00,  1.73it/s][A
+100%|██████████| 7/7 [00:03<00:00,  1.72it/s][A                                                 
+                                             [A100%|██████████| 125/125 [01:38<00:00,  2.49it/s]
+100%|██████████| 7/7 [00:03<00:00,  1.72it/s][A
+                                             [ASaving model checkpoint to scifive_biored_output/checkpoint-125
+Configuration saved in scifive_biored_output/checkpoint-125/config.json
+Configuration saved in scifive_biored_output/checkpoint-125/generation_config.json
+Model weights saved in scifive_biored_output/checkpoint-125/model.safetensors
+tokenizer config file saved in scifive_biored_output/checkpoint-125/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/checkpoint-125/special_tokens_map.json
+Deleting older checkpoint [scifive_biored_output/checkpoint-75] due to args.save_total_limit
+
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+                                                 100%|██████████| 125/125 [01:44<00:00,  2.49it/s]100%|██████████| 125/125 [01:44<00:00,  1.20it/s]
+Saving model checkpoint to scifive_biored_output/final_model
+Configuration saved in scifive_biored_output/final_model/config.json
+Configuration saved in scifive_biored_output/final_model/generation_config.json
+Model weights saved in scifive_biored_output/final_model/model.safetensors
+tokenizer config file saved in scifive_biored_output/final_model/tokenizer_config.json
+Special tokens file saved in scifive_biored_output/final_model/special_tokens_map.json
