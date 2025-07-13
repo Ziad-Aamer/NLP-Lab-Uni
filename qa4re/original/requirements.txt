@@ -1,0 +1,8 @@
+transformers
+torch
+openai
+pandas
+ipdb
+tenacity
+sentencepiece
+lime

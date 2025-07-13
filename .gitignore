@@ -5,3 +5,7 @@ scifive_model/scifive_biored_output/final_model/*
 biobert/outputs/model_checkpoints/
 biobert/data
 __pycache__/
+qa4re/original/data/*
+qa4re/original/output/*
+qa4re/original/outputs/*
+qa4re/original/env
