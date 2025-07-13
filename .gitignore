@@ -9,3 +9,4 @@ qa4re/original/data/*
 qa4re/original/output/*
 qa4re/original/outputs/*
 qa4re/original/env
+qa4re/prepared_prompt_files/*
