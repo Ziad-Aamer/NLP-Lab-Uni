@@ -1,2 +1,7 @@
 core.login23-1.hpc.itc.rwth-aachen.de.213124.11
 scifive_model/scifive_biored_output/final_model/*
+
+# BioBERT implementation exclusions
+biobert/outputs/model_checkpoints/
+biobert/data
+__pycache__/

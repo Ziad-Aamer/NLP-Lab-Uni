@@ -1,0 +1,16 @@
+                      precision    recall  f1-score   support
+
+         Association     0.6092    0.8401    0.7063       538
+                Bind     0.0000    0.0000    0.0000        10
+          Comparison     0.0000    0.0000    0.0000         5
+          Conversion     0.0000    0.0000    0.0000         0
+         Cotreatment     0.0000    0.0000    0.0000        10
+    Drug_Interaction     0.0000    0.0000    0.0000         0
+Negative_Correlation     0.4211    0.5024    0.4581       207
+Positive_Correlation     0.5360    0.1948    0.2857       344
+
+            accuracy                         0.5592      1114
+           macro avg     0.1958    0.1922    0.1813      1114
+        weighted avg     0.5379    0.5592    0.5144      1114
+
+Summary (macro avg): Accuracy=0.5592, Precision=0.1958, Recall=0.1922, F1=0.1813

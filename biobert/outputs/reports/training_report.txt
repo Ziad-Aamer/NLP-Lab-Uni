@@ -1,0 +1,140 @@
+
+Epoch 1/5
+Step 10/240 - Batch Loss: 1.6230 - Running Avg Loss: 1.8543 - Accuracy: 0.2500
+Step 20/240 - Batch Loss: 1.4463 - Running Avg Loss: 1.6511 - Accuracy: 0.3844
+Step 30/240 - Batch Loss: 1.2249 - Running Avg Loss: 1.5372 - Accuracy: 0.4167
+Step 40/240 - Batch Loss: 1.2178 - Running Avg Loss: 1.4446 - Accuracy: 0.4531
+Step 50/240 - Batch Loss: 0.9428 - Running Avg Loss: 1.3795 - Accuracy: 0.4637
+Step 60/240 - Batch Loss: 0.7811 - Running Avg Loss: 1.3404 - Accuracy: 0.4781
+Step 70/240 - Batch Loss: 1.2098 - Running Avg Loss: 1.3088 - Accuracy: 0.4938
+Step 80/240 - Batch Loss: 1.2259 - Running Avg Loss: 1.2845 - Accuracy: 0.5016
+Step 90/240 - Batch Loss: 0.9251 - Running Avg Loss: 1.2500 - Accuracy: 0.5146
+Step 100/240 - Batch Loss: 1.1740 - Running Avg Loss: 1.2272 - Accuracy: 0.5181
+Step 110/240 - Batch Loss: 0.7923 - Running Avg Loss: 1.1992 - Accuracy: 0.5267
+Step 120/240 - Batch Loss: 1.0109 - Running Avg Loss: 1.1720 - Accuracy: 0.5380
+Step 130/240 - Batch Loss: 1.0682 - Running Avg Loss: 1.1599 - Accuracy: 0.5418
+Step 140/240 - Batch Loss: 0.9426 - Running Avg Loss: 1.1461 - Accuracy: 0.5478
+Step 150/240 - Batch Loss: 0.7775 - Running Avg Loss: 1.1425 - Accuracy: 0.5496
+Step 160/240 - Batch Loss: 1.1029 - Running Avg Loss: 1.1361 - Accuracy: 0.5523
+Step 170/240 - Batch Loss: 0.8760 - Running Avg Loss: 1.1219 - Accuracy: 0.5588
+Step 180/240 - Batch Loss: 0.9151 - Running Avg Loss: 1.1124 - Accuracy: 0.5615
+Step 190/240 - Batch Loss: 1.1608 - Running Avg Loss: 1.1057 - Accuracy: 0.5615
+Step 200/240 - Batch Loss: 0.8823 - Running Avg Loss: 1.1001 - Accuracy: 0.5619
+Step 210/240 - Batch Loss: 1.2028 - Running Avg Loss: 1.0915 - Accuracy: 0.5637
+Step 220/240 - Batch Loss: 1.3062 - Running Avg Loss: 1.0859 - Accuracy: 0.5645
+Step 230/240 - Batch Loss: 1.1103 - Running Avg Loss: 1.0830 - Accuracy: 0.5649
+Step 240/240 - Batch Loss: 1.2998 - Running Avg Loss: 1.0770 - Accuracy: 0.5677
+Epoch 1 Summary - Loss: 1.0770 | Acc: 0.5677 | Prec: 0.1818 | Rec: 0.1681 | F1: 0.1643
+
+
+Epoch 2/5
+Step 10/240 - Batch Loss: 0.7565 - Running Avg Loss: 0.8718 - Accuracy: 0.6875
+Step 20/240 - Batch Loss: 0.6944 - Running Avg Loss: 0.8680 - Accuracy: 0.6844
+Step 30/240 - Batch Loss: 0.8452 - Running Avg Loss: 0.8728 - Accuracy: 0.6875
+Step 40/240 - Batch Loss: 0.3921 - Running Avg Loss: 0.8537 - Accuracy: 0.6859
+Step 50/240 - Batch Loss: 0.6000 - Running Avg Loss: 0.8457 - Accuracy: 0.6875
+Step 60/240 - Batch Loss: 0.8380 - Running Avg Loss: 0.8443 - Accuracy: 0.6823
+Step 70/240 - Batch Loss: 0.7251 - Running Avg Loss: 0.8418 - Accuracy: 0.6857
+Step 80/240 - Batch Loss: 0.6944 - Running Avg Loss: 0.8317 - Accuracy: 0.6906
+Step 90/240 - Batch Loss: 1.0247 - Running Avg Loss: 0.8443 - Accuracy: 0.6861
+Step 100/240 - Batch Loss: 0.5637 - Running Avg Loss: 0.8282 - Accuracy: 0.6937
+Step 110/240 - Batch Loss: 0.4878 - Running Avg Loss: 0.8301 - Accuracy: 0.6903
+Step 120/240 - Batch Loss: 0.7843 - Running Avg Loss: 0.8242 - Accuracy: 0.6948
+Step 130/240 - Batch Loss: 0.8642 - Running Avg Loss: 0.8265 - Accuracy: 0.6889
+Step 140/240 - Batch Loss: 1.1288 - Running Avg Loss: 0.8223 - Accuracy: 0.6929
+Step 150/240 - Batch Loss: 0.6723 - Running Avg Loss: 0.8257 - Accuracy: 0.6929
+Step 160/240 - Batch Loss: 1.1890 - Running Avg Loss: 0.8214 - Accuracy: 0.6910
+Step 170/240 - Batch Loss: 0.6134 - Running Avg Loss: 0.8185 - Accuracy: 0.6919
+Step 180/240 - Batch Loss: 0.5423 - Running Avg Loss: 0.8166 - Accuracy: 0.6941
+Step 190/240 - Batch Loss: 0.8823 - Running Avg Loss: 0.8180 - Accuracy: 0.6911
+Step 200/240 - Batch Loss: 1.0904 - Running Avg Loss: 0.8199 - Accuracy: 0.6894
+Step 210/240 - Batch Loss: 0.6157 - Running Avg Loss: 0.8177 - Accuracy: 0.6923
+Step 220/240 - Batch Loss: 0.5344 - Running Avg Loss: 0.8158 - Accuracy: 0.6935
+Step 230/240 - Batch Loss: 1.3393 - Running Avg Loss: 0.8185 - Accuracy: 0.6929
+Step 240/240 - Batch Loss: 1.1632 - Running Avg Loss: 0.8148 - Accuracy: 0.6951
+Epoch 2 Summary - Loss: 0.8148 | Acc: 0.6951 | Prec: 0.3678 | Rec: 0.2571 | F1: 0.2693
+
+
+Epoch 3/5
+Step 10/240 - Batch Loss: 0.4685 - Running Avg Loss: 0.5681 - Accuracy: 0.8187
+Step 20/240 - Batch Loss: 0.5461 - Running Avg Loss: 0.6009 - Accuracy: 0.8219
+Step 30/240 - Batch Loss: 1.0512 - Running Avg Loss: 0.6160 - Accuracy: 0.7958
+Step 40/240 - Batch Loss: 0.4140 - Running Avg Loss: 0.6170 - Accuracy: 0.7984
+Step 50/240 - Batch Loss: 0.3768 - Running Avg Loss: 0.5939 - Accuracy: 0.8025
+Step 60/240 - Batch Loss: 0.8304 - Running Avg Loss: 0.5897 - Accuracy: 0.8010
+Step 70/240 - Batch Loss: 0.6118 - Running Avg Loss: 0.6047 - Accuracy: 0.7937
+Step 80/240 - Batch Loss: 0.6300 - Running Avg Loss: 0.6040 - Accuracy: 0.7891
+Step 90/240 - Batch Loss: 0.5164 - Running Avg Loss: 0.6186 - Accuracy: 0.7826
+Step 100/240 - Batch Loss: 1.0588 - Running Avg Loss: 0.6229 - Accuracy: 0.7788
+Step 110/240 - Batch Loss: 0.4079 - Running Avg Loss: 0.6207 - Accuracy: 0.7790
+Step 120/240 - Batch Loss: 0.6039 - Running Avg Loss: 0.6136 - Accuracy: 0.7823
+Step 130/240 - Batch Loss: 0.5120 - Running Avg Loss: 0.6186 - Accuracy: 0.7798
+Step 140/240 - Batch Loss: 0.5469 - Running Avg Loss: 0.6133 - Accuracy: 0.7817
+Step 150/240 - Batch Loss: 0.8807 - Running Avg Loss: 0.6126 - Accuracy: 0.7804
+Step 160/240 - Batch Loss: 0.3953 - Running Avg Loss: 0.6098 - Accuracy: 0.7793
+Step 170/240 - Batch Loss: 0.8923 - Running Avg Loss: 0.6192 - Accuracy: 0.7754
+Step 180/240 - Batch Loss: 0.6789 - Running Avg Loss: 0.6286 - Accuracy: 0.7698
+Step 190/240 - Batch Loss: 0.4906 - Running Avg Loss: 0.6378 - Accuracy: 0.7681
+Step 200/240 - Batch Loss: 0.8054 - Running Avg Loss: 0.6381 - Accuracy: 0.7662
+Step 210/240 - Batch Loss: 0.5524 - Running Avg Loss: 0.6358 - Accuracy: 0.7661
+Step 220/240 - Batch Loss: 0.4264 - Running Avg Loss: 0.6361 - Accuracy: 0.7673
+Step 230/240 - Batch Loss: 0.3505 - Running Avg Loss: 0.6348 - Accuracy: 0.7682
+Step 240/240 - Batch Loss: 1.2805 - Running Avg Loss: 0.6383 - Accuracy: 0.7672
+Epoch 3 Summary - Loss: 0.6383 | Acc: 0.7672 | Prec: 0.4852 | Rec: 0.3642 | F1: 0.3829
+
+
+Epoch 4/5
+Step 10/240 - Batch Loss: 0.3064 - Running Avg Loss: 0.4287 - Accuracy: 0.8500
+Step 20/240 - Batch Loss: 0.6621 - Running Avg Loss: 0.4956 - Accuracy: 0.8281
+Step 30/240 - Batch Loss: 0.2981 - Running Avg Loss: 0.4779 - Accuracy: 0.8396
+Step 40/240 - Batch Loss: 0.2456 - Running Avg Loss: 0.4700 - Accuracy: 0.8391
+Step 50/240 - Batch Loss: 0.2784 - Running Avg Loss: 0.4528 - Accuracy: 0.8450
+Step 60/240 - Batch Loss: 0.4619 - Running Avg Loss: 0.4675 - Accuracy: 0.8406
+Step 70/240 - Batch Loss: 0.5406 - Running Avg Loss: 0.4752 - Accuracy: 0.8438
+Step 80/240 - Batch Loss: 0.5327 - Running Avg Loss: 0.4783 - Accuracy: 0.8383
+Step 90/240 - Batch Loss: 0.7199 - Running Avg Loss: 0.4921 - Accuracy: 0.8313
+Step 100/240 - Batch Loss: 0.5295 - Running Avg Loss: 0.4779 - Accuracy: 0.8363
+Step 110/240 - Batch Loss: 0.5222 - Running Avg Loss: 0.4763 - Accuracy: 0.8369
+Step 120/240 - Batch Loss: 0.5900 - Running Avg Loss: 0.4838 - Accuracy: 0.8328
+Step 130/240 - Batch Loss: 0.3400 - Running Avg Loss: 0.4901 - Accuracy: 0.8298
+Step 140/240 - Batch Loss: 0.5546 - Running Avg Loss: 0.4937 - Accuracy: 0.8290
+Step 150/240 - Batch Loss: 0.4646 - Running Avg Loss: 0.4979 - Accuracy: 0.8258
+Step 160/240 - Batch Loss: 0.4011 - Running Avg Loss: 0.4994 - Accuracy: 0.8246
+Step 170/240 - Batch Loss: 0.4269 - Running Avg Loss: 0.5005 - Accuracy: 0.8228
+Step 180/240 - Batch Loss: 0.4083 - Running Avg Loss: 0.5036 - Accuracy: 0.8212
+Step 190/240 - Batch Loss: 0.7023 - Running Avg Loss: 0.5064 - Accuracy: 0.8204
+Step 200/240 - Batch Loss: 0.6997 - Running Avg Loss: 0.5110 - Accuracy: 0.8191
+Step 210/240 - Batch Loss: 0.4383 - Running Avg Loss: 0.5061 - Accuracy: 0.8214
+Step 220/240 - Batch Loss: 0.2840 - Running Avg Loss: 0.5001 - Accuracy: 0.8233
+Step 230/240 - Batch Loss: 0.2404 - Running Avg Loss: 0.4978 - Accuracy: 0.8245
+Step 240/240 - Batch Loss: 0.1821 - Running Avg Loss: 0.4989 - Accuracy: 0.8243
+Epoch 4 Summary - Loss: 0.4989 | Acc: 0.8243 | Prec: 0.5281 | Rec: 0.4601 | F1: 0.4849
+
+
+Epoch 5/5
+Step 10/240 - Batch Loss: 0.1825 - Running Avg Loss: 0.3311 - Accuracy: 0.8625
+Step 20/240 - Batch Loss: 0.4986 - Running Avg Loss: 0.3960 - Accuracy: 0.8438
+Step 30/240 - Batch Loss: 0.5895 - Running Avg Loss: 0.4151 - Accuracy: 0.8333
+Step 40/240 - Batch Loss: 0.1534 - Running Avg Loss: 0.4331 - Accuracy: 0.8344
+Step 50/240 - Batch Loss: 0.5072 - Running Avg Loss: 0.4256 - Accuracy: 0.8387
+Step 60/240 - Batch Loss: 0.2505 - Running Avg Loss: 0.4202 - Accuracy: 0.8458
+Step 70/240 - Batch Loss: 0.0711 - Running Avg Loss: 0.4152 - Accuracy: 0.8500
+Step 80/240 - Batch Loss: 0.2980 - Running Avg Loss: 0.4093 - Accuracy: 0.8539
+Step 90/240 - Batch Loss: 0.2885 - Running Avg Loss: 0.4114 - Accuracy: 0.8528
+Step 100/240 - Batch Loss: 0.3800 - Running Avg Loss: 0.4121 - Accuracy: 0.8538
+Step 110/240 - Batch Loss: 0.4023 - Running Avg Loss: 0.4152 - Accuracy: 0.8545
+Step 120/240 - Batch Loss: 0.2595 - Running Avg Loss: 0.4113 - Accuracy: 0.8547
+Step 130/240 - Batch Loss: 0.4496 - Running Avg Loss: 0.4100 - Accuracy: 0.8543
+Step 140/240 - Batch Loss: 0.3176 - Running Avg Loss: 0.4066 - Accuracy: 0.8549
+Step 150/240 - Batch Loss: 0.1866 - Running Avg Loss: 0.4061 - Accuracy: 0.8558
+Step 160/240 - Batch Loss: 0.1440 - Running Avg Loss: 0.4046 - Accuracy: 0.8562
+Step 170/240 - Batch Loss: 0.6843 - Running Avg Loss: 0.4083 - Accuracy: 0.8533
+Step 180/240 - Batch Loss: 0.3257 - Running Avg Loss: 0.4037 - Accuracy: 0.8545
+Step 190/240 - Batch Loss: 0.5140 - Running Avg Loss: 0.4107 - Accuracy: 0.8513
+Step 200/240 - Batch Loss: 0.4283 - Running Avg Loss: 0.4076 - Accuracy: 0.8525
+Step 210/240 - Batch Loss: 0.1053 - Running Avg Loss: 0.4051 - Accuracy: 0.8536
+Step 220/240 - Batch Loss: 0.4038 - Running Avg Loss: 0.4034 - Accuracy: 0.8545
+Step 230/240 - Batch Loss: 0.1116 - Running Avg Loss: 0.4035 - Accuracy: 0.8562
+Step 240/240 - Batch Loss: 0.3997 - Running Avg Loss: 0.4027 - Accuracy: 0.8562
+Epoch 5 Summary - Loss: 0.4027 | Acc: 0.8562 | Prec: 0.5725 | Rec: 0.5290 | F1: 0.5475
+
