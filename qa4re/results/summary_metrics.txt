@@ -1,0 +1,11 @@
+=== DEV Split ===
+Size: 1284
+Accuracy: 18.61%
+F1 (macro): 0.0674
+Invalid predictions: 297 (23.13%)
+
+=== TRAIN Split ===
+Size: 4497
+Accuracy: 17.08%
+F1 (macro): 0.0588
+Invalid predictions: 695 (15.45%)
