@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 from config import REPORT_DIR
 
-def evaluate_model(model, dataloader, label_list, split_name="eval"):
+def evaluate_model(model, dataloader, label_list, split_name="eval", debug=False, return_metrics=False):
     model.eval()
     all_preds = []
     all_labels = []
@@ -26,6 +26,12 @@ def evaluate_model(model, dataloader, label_list, split_name="eval"):
             all_labels.extend(labels.cpu().numpy())
 
     label_ids = list(range(len(label_list)))
+
+    # Debug: Print unique values to check label consistency
+    if debug:
+        print("[DEBUG] Unique predicted labels:", set(all_preds))
+        print("[DEBUG] Unique true labels:", set(all_labels))
+        print("[DEBUG] Expected label ids:", set(label_ids))
 
     report_dict = classification_report(
         y_true=all_labels,
@@ -50,7 +56,7 @@ def evaluate_model(model, dataloader, label_list, split_name="eval"):
     macro_prec = report_dict["macro avg"]["precision"]
     macro_recall = report_dict["macro avg"]["recall"]
     macro_f1 = report_dict["macro avg"]["f1-score"]
-    accuracy = report_dict["accuracy"]
+    accuracy = report_dict.get("accuracy", 0.0)
 
     # Print full report
     print("\nEvaluation Report:")
@@ -67,3 +73,14 @@ def evaluate_model(model, dataloader, label_list, split_name="eval"):
         f.write(f"Summary (macro avg): Accuracy={accuracy:.4f}, Precision={macro_prec:.4f}, Recall={macro_recall:.4f}, F1={macro_f1:.4f}\n")
 
     print(f"Report saved to {output_path}")
+
+    if debug:
+        print(f"[DEBUG] Number of predictions: {len(all_preds)}, Number of labels: {len(all_labels)}")
+
+    if return_metrics:
+        return {
+            "accuracy": accuracy,
+            "macro_precision": macro_prec,
+            "macro_recall": macro_recall,
+            "macro_f1": macro_f1
+        }

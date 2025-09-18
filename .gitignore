@@ -4,6 +4,8 @@ scifive_model/scifive_biored_output/final_model/*
 # BioBERT implementation exclusions
 biobert/outputs/model_checkpoints/
 biobert/data
+biobert/outputs
+biobert/outputs/*
 __pycache__/
 qa4re/original/data/*
 qa4re/original/output/*

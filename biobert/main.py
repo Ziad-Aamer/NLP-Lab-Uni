@@ -15,7 +15,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--mini', action='store_true', help='Use mini-biored as the dataset')
     parser.add_argument('--gen-result-plots', action='store_true', help='Generate evaluation metric plots and exit')
+    parser.add_argument('--debug', action='store_true', help='Enable debug mode with verbose logging')
+    parser.add_argument('--early-stopping', action='store_true', help='Enable early stopping during training')
+    parser.add_argument('--save-model', action='store_true', help='Save the trained model after training')
     args = parser.parse_args()
+
+    print(f"[DEBUG] : {args.debug}")
 
     # Early return if plotting only
     if args.gen_result_plots:
@@ -65,7 +70,7 @@ def main():
     model = get_model(num_labels).to(DEVICE)
 
     # Start training
-    train_model(model, train_loader, dev_loader, label_list)
+    train_model(model, train_loader, dev_loader, label_list, debug=args.debug, epoch_override=not args.early_stopping, save_model=args.save_model)
 
     # Evaluate on the test set
     print("\nEvaluating on test set:")
