@@ -1,6 +1,8 @@
 import os
 import re
 import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
 
 from config import REPORT_DIR, OUTPUT_DIR
 
@@ -94,6 +96,20 @@ def plot_metric_curve(metric_name, train_vals, dev_vals, test_val=None):
     plt.grid(True)
     plt.tight_layout()
     plt.savefig(os.path.join(OUTPUT_DIR, "plots", f"{metric_name.lower()}_curve.png"))
+    plt.close()
+
+def plot_confusion_matrix(all_preds, all_labels, label_list, split_name="test"):
+    cm = confusion_matrix(all_labels, all_preds, labels=list(range(len(label_list))))
+
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", xticklabels=label_list, yticklabels=label_list, cmap="Blues")
+    plt.xlabel("Predicted")
+    plt.ylabel("True")
+    plt.title(f"Confusion Matrix: {split_name}")
+    plt.tight_layout()
+
+    os.makedirs(os.path.join(OUTPUT_DIR), exist_ok=True)
+    plt.savefig(os.path.join(OUTPUT_DIR, "plots", f"{split_name}_confusion.png"))
     plt.close()
 
 def generate_all_plots():

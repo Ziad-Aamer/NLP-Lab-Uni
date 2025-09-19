@@ -7,10 +7,9 @@ from evaluate import evaluate_model
 from utils import set_seed
 import argparse
 import os
+import torch
 
 def main():
-
-    set_seed(42)  # Set random seed for reproducibility
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--mini', action='store_true', help='Use mini-biored as the dataset')
@@ -18,7 +17,15 @@ def main():
     parser.add_argument('--debug', action='store_true', help='Enable debug mode with verbose logging')
     parser.add_argument('--early-stopping', action='store_true', help='Enable early stopping during training')
     parser.add_argument('--save-model', action='store_true', help='Save the trained model after training')
+    parser.add_argument('--weighted-loss', action='store_true', help='Use class-weighted loss')
+    parser.add_argument('--dropout', action='store_true', help='Enable dropout on classifier head')
+    parser.add_argument('--weight-decay', type=float, default=0.0, help='Weight decay for optimizer')
+    parser.add_argument('--show-confusion', action='store_true', help='Show confusion matrix')
+    parser.add_argument('--seed', type=int, default=42, help='Random seed')
+    parser.add_argument("--use-best", action="store_true", help="Load best model (by dev F1) for test evaluation")
     args = parser.parse_args()
+
+    set_seed(args.seed)  # Set random seed for reproducibility
 
     print(f"[DEBUG] : {args.debug}")
 
@@ -57,27 +64,57 @@ def main():
         max_len=MAX_LEN
     )
 
-    print("Labels:", label_list)
-    print("Number of training samples:", len(train_loader.dataset))
-    print("Number of dev samples:", len(dev_loader.dataset))
-    print("Number of test samples:", len(test_loader.dataset))
-
-    # Dynamically compute num_labels from label list
-    num_labels = len(label_list)
+    if args.debug:
+        print("[DEBUG] Labels:", label_list)
+        print("[DEBUG] Number of training samples:", len(train_loader.dataset))
+        print("[DEBUG] Number of dev samples:", len(dev_loader.dataset))
+        print("[DEBUG] Number of test samples:", len(test_loader.dataset))
 
     # Instantiate the model
     print("Instantiating model...")
-    model = get_model(num_labels).to(DEVICE)
+    model = get_model(len(label_list), use_dropout=args.dropout).to(DEVICE)
 
     # Start training
-    train_model(model, train_loader, dev_loader, label_list, debug=args.debug, epoch_override=not args.early_stopping, save_model=args.save_model)
+    train_model(
+        model,
+        train_loader,
+        dev_loader,
+        label_list,
+        debug=args.debug,
+        epoch_override=not args.early_stopping,
+        save_model=args.save_model,
+        use_weighted_loss=args.weighted_loss,
+        weight_decay=args.weight_decay,
+        show_confusion=args.show_confusion  # for confusion matrix
+    )
+
+    if args.use_best:
+        best_path = os.path.join(MODEL_DIR, "best_model.pt")
+        if os.path.exists(best_path):
+            print(f"[INFO] Loading best model from {best_path}")
+            model.load_state_dict(torch.load(best_path, map_location=DEVICE))
+            model.to(DEVICE)
+        else:
+            print(f"[WARN] Best model not found at {best_path}, using current model instead.")
 
     # Evaluate on the test set
     print("\nEvaluating on test set:")
-    evaluate_model(model, test_loader, label_list, split_name="test")
+    evaluate_model(model, 
+        test_loader,
+        label_list,
+        split_name="test",
+        debug=args.debug,
+        show_confusion=args.show_confusion
+    )
 
-    print(f"All model checkpoints saved to: {MODEL_DIR}")
+    if args.save_model:
+        print(f"All model checkpoints saved to: {MODEL_DIR}")
     print(f"Reports and logs saved to: {REPORT_DIR}")
+
+    # Generate plots
+    from plot import generate_all_plots
+    generate_all_plots()
+    print("Plots saved to outputs/plots/")
 
 if __name__ == "__main__":
     main()

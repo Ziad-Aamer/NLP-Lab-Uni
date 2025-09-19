@@ -4,14 +4,41 @@ from tqdm import tqdm
 from config import DEVICE, EPOCHS, LR, MODEL_DIR, REPORT_DIR, EARLY_STOPPING_PATIENCE, EARLY_STOPPING_DELTA
 from evaluate import evaluate_model
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+import numpy as np
+from sklearn.utils.class_weight import compute_class_weight
 import os
+import json
 
-def train_model(model, train_loader, dev_loader, label_list, debug=False, epoch_override=False, save_model=False):
+def train_model(model, train_loader, dev_loader, label_list, debug=False, epoch_override=False, save_model=False,
+    use_weighted_loss=False, weight_decay=0.0, show_confusion=False):
     if debug:
         print(f"[DEBUG] Training for {EPOCHS} epochs")
     model.to(DEVICE)
-    optimizer = AdamW(model.parameters(), lr=LR)
-    loss_fn = torch.nn.CrossEntropyLoss()
+    optimizer = AdamW(model.parameters(), lr=LR, weight_decay=weight_decay)
+    if use_weighted_loss:
+        print("[INFO] Using class-weighted loss")
+        all_labels = []
+        for batch in train_loader:
+            all_labels.extend(batch["label"].tolist())
+        class_weights = compute_class_weight(
+            class_weight='balanced',
+            classes=np.array(range(len(label_list))),
+            y=all_labels
+        )
+        weight_tensor = torch.tensor(class_weights, dtype=torch.float).to(DEVICE)
+        loss_fn = torch.nn.CrossEntropyLoss(weight=weight_tensor)
+
+        # Save class weights using label names for readability
+        weights_dict = {
+            label_list[i]: float(w) for i, w in enumerate(class_weights)
+        }
+        save_path = os.path.join(REPORT_DIR, "class_weights.json")
+        with open(save_path, "w") as f:
+            json.dump(weights_dict, f, indent=2)
+        print(f"[INFO] Saved class weights to {save_path}")
+
+    else:
+        loss_fn = torch.nn.CrossEntropyLoss()
 
     best_f1 = -float('inf')
     prev_f1 = -float('inf')
@@ -81,13 +108,26 @@ def train_model(model, train_loader, dev_loader, label_list, debug=False, epoch_
             else:
                 # Evaluate on validation set and get F1
                 val_metrics = evaluate_model(
-                    model, dev_loader, label_list, split_name=f"dev_epoch{epoch+1}", debug=debug, return_metrics=True
+                    model,
+                    dev_loader,
+                    label_list,
+                    split_name=f"dev_epoch{epoch+1}",
+                    debug=debug,
+                    return_metrics=True,
+                    show_confusion=show_confusion
                 )
                 val_f1 = val_metrics.get("macro_f1", 0.0)
 
-                # Early stopping logic (compare with previous epoch's F1 + delta)
+                # Save best model checkpoint regardless of early stopping condition
+                if val_f1 > best_f1:
+                    best_f1 = val_f1
+                    best_epoch = epoch + 1
+                    best_model_path = os.path.join(MODEL_DIR, "best_model.pt")
+                    torch.save(model.state_dict(), best_model_path)
+                    print(f"[INFO] Best model saved at Epoch {best_epoch} with F1: {best_f1:.4f}")
+
+                # Early stopping logic
                 if val_f1 > prev_f1 + EARLY_STOPPING_DELTA:
-                    best_f1 = max(best_f1, val_f1)
                     epochs_no_improve = 0
                 else:
                     epochs_no_improve += 1

@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 from config import REPORT_DIR
 
-def evaluate_model(model, dataloader, label_list, split_name="eval", debug=False, return_metrics=False):
+def evaluate_model(model, dataloader, label_list, split_name="eval", debug=False, return_metrics=False, show_confusion=False):
     model.eval()
     all_preds = []
     all_labels = []
@@ -76,6 +76,11 @@ def evaluate_model(model, dataloader, label_list, split_name="eval", debug=False
 
     if debug:
         print(f"[DEBUG] Number of predictions: {len(all_preds)}, Number of labels: {len(all_labels)}")
+
+    if show_confusion and split_name == "test":
+        from plot import plot_confusion_matrix
+        plot_confusion_matrix(all_preds, all_labels, label_list, split_name=split_name)
+
 
     if return_metrics:
         return {
