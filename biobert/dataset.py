@@ -35,10 +35,11 @@ def insert_entity_markers(sentence, ent1, ent2):
         return sentence
 
 class RelationDataset(Dataset):
-    def __init__(self, path, label_to_id, tokenizer):
+    def __init__(self, path, label_to_id, tokenizer, max_len=MAX_LEN):
         self.samples = []
         self.label_to_id = label_to_id
         self.tokenizer = tokenizer
+        self.max_len = max_len
 
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
@@ -58,7 +59,7 @@ class RelationDataset(Dataset):
             sentence,
             padding="max_length",
             truncation=True,
-            max_length=MAX_LEN,
+            max_length=self.max_len,
             return_tensors="pt"
         )
 
@@ -80,9 +81,9 @@ def load_dataloaders(data_dir, batch_size, max_len):
     train_path = os.path.join(data_dir, "train.tsv")
     label_list, label_to_id, id_to_label = extract_labels_from_tsv(train_path)
 
-    train_set = RelationDataset(train_path, label_to_id, tokenizer)
-    dev_set = RelationDataset(os.path.join(data_dir, "dev.tsv"), label_to_id, tokenizer)
-    test_set = RelationDataset(os.path.join(data_dir, "test.tsv"), label_to_id, tokenizer)
+    train_set = RelationDataset(train_path, label_to_id, tokenizer, max_len=max_len)
+    dev_set = RelationDataset(os.path.join(data_dir, "dev.tsv"), label_to_id, tokenizer, max_len=max_len)
+    test_set = RelationDataset(os.path.join(data_dir, "test.tsv"), label_to_id, tokenizer, max_len=max_len)
 
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
     dev_loader = DataLoader(dev_set, batch_size=batch_size, shuffle=False)

@@ -23,6 +23,7 @@ def main():
     parser.add_argument('--show-confusion', action='store_true', help='Show confusion matrix')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument("--use-best", action="store_true", help="Load best model (by dev F1) for test evaluation")
+    parser.add_argument("--max-seq-len", type=int, default=MAX_LEN, help="Maximum input sequence length for tokenizer and model")
     args = parser.parse_args()
 
     set_seed(args.seed)  # Set random seed for reproducibility
@@ -61,7 +62,7 @@ def main():
     train_loader, dev_loader, test_loader, label_list, label_to_id, id_to_label = load_dataloaders(
         data_dir=active_data_dir,
         batch_size=BATCH_SIZE,
-        max_len=MAX_LEN
+        max_len=args.max_seq_len
     )
 
     if args.debug:
