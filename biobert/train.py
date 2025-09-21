@@ -8,14 +8,48 @@ import numpy as np
 from sklearn.utils.class_weight import compute_class_weight
 import os
 import json
+import torch.nn.functional as F
 
-def train_model(model, train_loader, dev_loader, label_list, debug=False, epoch_override=False, save_model=False,
-    use_weighted_loss=False, weight_decay=0.0, show_confusion=False):
+class FocalLoss(torch.nn.Module):
+    def __init__(self, alpha=1.0, gamma=2.0, reduction='mean'):
+        super(FocalLoss, self).__init__()
+        self.alpha = alpha
+        self.gamma = gamma
+        self.reduction = reduction
+
+    def forward(self, inputs, targets):
+        log_probs = F.log_softmax(inputs, dim=1)
+        probs = torch.exp(log_probs)
+        targets_one_hot = F.one_hot(targets, num_classes=inputs.size(1)).float()
+
+        loss = -self.alpha * (1 - probs) ** self.gamma * log_probs * targets_one_hot
+        loss = loss.sum(dim=1)
+
+        if self.reduction == 'mean':
+            return loss.mean()
+        elif self.reduction == 'sum':
+            return loss.sum()
+        else:
+            return loss
+
+def train_model(model, train_loader, dev_loader, label_list,
+                debug=False, epoch_override=False, save_model=False,
+                use_weighted_loss=False, weight_decay=0.0, show_confusion=False,
+                label_smoothing=0.0, use_focal_loss=False):
     if debug:
         print(f"[DEBUG] Training for {EPOCHS} epochs")
     model.to(DEVICE)
     optimizer = AdamW(model.parameters(), lr=LR, weight_decay=weight_decay)
-    if use_weighted_loss:
+
+    if use_focal_loss:
+        print("[INFO] Using Focal Loss")
+        loss_fn = FocalLoss(alpha=1.0, gamma=2.0)
+
+    elif label_smoothing > 0.0:
+        print(f"[INFO] Using Label Smoothing with factor: {label_smoothing}")
+        loss_fn = torch.nn.CrossEntropyLoss(label_smoothing=label_smoothing)
+
+    elif use_weighted_loss:
         print("[INFO] Using class-weighted loss")
         all_labels = []
         for batch in train_loader:
@@ -28,7 +62,7 @@ def train_model(model, train_loader, dev_loader, label_list, debug=False, epoch_
         weight_tensor = torch.tensor(class_weights, dtype=torch.float).to(DEVICE)
         loss_fn = torch.nn.CrossEntropyLoss(weight=weight_tensor)
 
-        # Save class weights using label names for readability
+        # Save class weights
         weights_dict = {
             label_list[i]: float(w) for i, w in enumerate(class_weights)
         }

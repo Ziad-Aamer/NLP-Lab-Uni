@@ -24,6 +24,9 @@ def main():
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
     parser.add_argument("--use-best", action="store_true", help="Load best model (by dev F1) for test evaluation")
     parser.add_argument("--max-seq-len", type=int, default=MAX_LEN, help="Maximum input sequence length for tokenizer and model")
+    parser.add_argument('--label-smoothing', type=float, default=0.0, help='Apply label smoothing loss (value between 0 and 1)')
+    parser.add_argument('--focal-loss', action='store_true', help='Use focal loss instead of cross entropy')
+
     args = parser.parse_args()
 
     set_seed(args.seed)  # Set random seed for reproducibility
@@ -86,7 +89,9 @@ def main():
         save_model=args.save_model,
         use_weighted_loss=args.weighted_loss,
         weight_decay=args.weight_decay,
-        show_confusion=args.show_confusion  # for confusion matrix
+        show_confusion=args.show_confusion,
+        label_smoothing=args.label_smoothing,
+        use_focal_loss=args.focal_loss
     )
 
     if args.use_best:

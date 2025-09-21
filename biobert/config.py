@@ -18,9 +18,9 @@ os.makedirs(REPORT_DIR, exist_ok=True)
 # ====== MODEL & TRAINING ======
 MAX_LEN = 256
 BATCH_SIZE = 16
-EPOCHS = 10
-LR = 1e-5
-# LR = 2e-5
+EPOCHS = 100
+# LR = 1e-5
+LR = 2e-5
 # LR = 5e-6
 WARMUP_RATIO = 0.1
 EARLY_STOPPING_PATIENCE = 5  # Number of epochs to wait for improvement
