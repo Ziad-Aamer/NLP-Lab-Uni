@@ -1,0 +1,97 @@
+***********************************google/gemma-3***********************************
+
+=== TEST ===
+Size: 1123
+Accuracy: 21.64%
+F1 (macro): 0.0201
+Invalid predictions: 28 (2.49%)
+
+
+***********************************google/flan-t5-large***********************************
+=== DEV Split ===
+Size: 1284
+Accuracy: 18.61%
+F1 (macro): 0.0849
+Invalid predictions: 249 (19.39%)
+
+=== TRAIN Split ===
+Size: 4497
+Accuracy: 23.48%
+F1 (macro): 0.0921
+Invalid predictions: 984 (21.88%)
+
+=== TEST ===
+Size: 1123
+Accuracy: 22.08%
+F1 (macro): 0.0542
+Invalid predictions: 328 (29.21%)
+
+
+
+
+
+
+***********************************google-t5/t5-base***********************************
+=== DEV Split ===
+Size: 1284
+Accuracy: 11.37%
+F1 (macro): 0.0627
+Invalid predictions: 709 (55.22%)
+
+=== TRAIN Split ===
+Size: 4497
+Accuracy: 8.78%
+F1 (macro): 0.0472
+Invalid predictions: 2412 (53.64%)
+
+***********************************openai/gpt-4o***********************************
+
+***********************************mistralai/Mistral-7B-v0.3***********************************
+=== DEV ===
+Size: 1284
+Accuracy: 21.50%
+F1 (macro): 0.1233
+Invalid predictions: 0 (0.00%)
+
+=== TRAIN ===
+Size: 4497
+Accuracy: 22.59%
+F1 (macro): 0.1290
+Invalid predictions: 0 (0.00%)
+
+=== TEST ===
+Size: 1123
+Accuracy: 21.19%
+F1 (macro): 0.1088
+Invalid predictions: 0 (0.00%)
+
+
+
+***********************************meta-llama/Llama-3.2-3B-Instruct***********************************
+
+=== TEST ===
+Size: 1123
+Accuracy: 35.17%
+F1 (macro): 0.2161
+Invalid predictions: 0 (0.00%)
+
+Size: 1123
+Accuracy: 36.33%
+F1 (macro): 0.2210
+Invalid predictions: 0 (0.00%)
+
+
+
+---->
+No invalid results on the large models like mistral, gpt, 
+
+
+
+
+8b
+=== TRAIN ===
+Size: 4497
+Accuracy: 21.41%
+F1 (macro): 0.0015
+Invalid predictions: 511 (11.36%)
+

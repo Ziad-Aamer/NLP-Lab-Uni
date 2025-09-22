@@ -1,0 +1,188 @@
+qa4re_prompt,gold_option_letter,pred,gold,correct
+"Determine which option can be inferred from the following passage.
+Passage: A novel SCN5A mutation manifests as a malignant form of long QT syndrome with perinatal onset of tachycardia/bradycardia.
+Options:
+A. bradycardia and SCN5A are positively correlated.
+B. bradycardia and SCN5A are negatively correlated.
+C. bradycardia and SCN5A are associated.
+D. bradycardia and SCN5A have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: A novel SCN5A mutation manifests as a malignant form of long QT syndrome with perinatal onset of tachycardia/bradycardia.
+Options:
+A. tachycardia and SCN5A are positively correlated.
+B. tachycardia and SCN5A are negatively correlated.
+C. tachycardia and SCN5A are associated.
+D. tachycardia and SCN5A have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: A novel SCN5A mutation manifests as a malignant form of long QT syndrome with perinatal onset of tachycardia/bradycardia.
+Options:
+A. long QT syndrome and SCN5A are positively correlated.
+B. long QT syndrome and SCN5A are negatively correlated.
+C. long QT syndrome and SCN5A are associated.
+D. long QT syndrome and SCN5A have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. bradycardia and SCN5A are positively correlated.
+B. bradycardia and SCN5A are negatively correlated.
+C. bradycardia and SCN5A are associated.
+D. bradycardia and SCN5A have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. bradycardia and V1763M are positively correlated.
+B. bradycardia and V1763M are negatively correlated.
+C. bradycardia and V1763M are associated.
+D. bradycardia and V1763M have no known relation.
+Which option can be inferred?
+Option:",D,C,D,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. SCN5A and arrhythmias are positively correlated.
+B. SCN5A and arrhythmias are negatively correlated.
+C. SCN5A and arrhythmias are associated.
+D. SCN5A and arrhythmias have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. arrhythmias and mexiletine are positively correlated.
+B. arrhythmias and mexiletine are negatively correlated.
+C. arrhythmias and mexiletine are associated.
+D. arrhythmias and mexiletine have a drug interaction.
+E. arrhythmias and mexiletine are used in cotreatment.
+F. arrhythmias and mexiletine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. arrhythmias and lidocaine are positively correlated.
+B. arrhythmias and lidocaine are negatively correlated.
+C. arrhythmias and lidocaine are associated.
+D. arrhythmias and lidocaine have a drug interaction.
+E. arrhythmias and lidocaine are used in cotreatment.
+F. arrhythmias and lidocaine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. V1763M and arrhythmias are positively correlated.
+B. V1763M and arrhythmias are negatively correlated.
+C. V1763M and arrhythmias are associated.
+D. V1763M and arrhythmias have no known relation.
+Which option can be inferred?
+Option:",D,C,D,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. V1763M and long QT syndrome are positively correlated.
+B. V1763M and long QT syndrome are negatively correlated.
+C. V1763M and long QT syndrome are associated.
+D. V1763M and long QT syndrome have no known relation.
+Which option can be inferred?
+Option:",D,C,D,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. long QT syndrome and SCN5A are positively correlated.
+B. long QT syndrome and SCN5A are negatively correlated.
+C. long QT syndrome and SCN5A are associated.
+D. long QT syndrome and SCN5A have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. long QT syndrome and valine (GTG) to a methionine (ATG) are positively correlated.
+B. long QT syndrome and valine (GTG) to a methionine (ATG) are negatively correlated.
+C. long QT syndrome and valine (GTG) to a methionine (ATG) are associated.
+D. long QT syndrome and valine (GTG) to a methionine (ATG) have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. long QT syndrome and G-->A substitution at codon 1763 are positively correlated.
+B. long QT syndrome and G-->A substitution at codon 1763 are negatively correlated.
+C. long QT syndrome and G-->A substitution at codon 1763 are associated.
+D. long QT syndrome and G-->A substitution at codon 1763 have no known relation.
+Which option can be inferred?
+Option:",C,C,C,True
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. long QT syndrome and mexiletine are positively correlated.
+B. long QT syndrome and mexiletine are negatively correlated.
+C. long QT syndrome and mexiletine are associated.
+D. long QT syndrome and mexiletine have a drug interaction.
+E. long QT syndrome and mexiletine are used in cotreatment.
+F. long QT syndrome and mexiletine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. long QT syndrome and lidocaine are positively correlated.
+B. long QT syndrome and lidocaine are negatively correlated.
+C. long QT syndrome and lidocaine are associated.
+D. long QT syndrome and lidocaine have a drug interaction.
+E. long QT syndrome and lidocaine are used in cotreatment.
+F. long QT syndrome and lidocaine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. mexiletine and ventricular tachycardia are positively correlated.
+B. mexiletine and ventricular tachycardia are negatively correlated.
+C. mexiletine and ventricular tachycardia are associated.
+D. mexiletine and ventricular tachycardia have a drug interaction.
+E. mexiletine and ventricular tachycardia are used in cotreatment.
+F. mexiletine and ventricular tachycardia have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. lidocaine and ventricular tachycardia are positively correlated.
+B. lidocaine and ventricular tachycardia are negatively correlated.
+C. lidocaine and ventricular tachycardia are associated.
+D. lidocaine and ventricular tachycardia have a drug interaction.
+E. lidocaine and ventricular tachycardia are used in cotreatment.
+F. lidocaine and ventricular tachycardia have no known relation.
+Which option can be inferred?
+Option:",F,B,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. atrioventricular block and mexiletine are positively correlated.
+B. atrioventricular block and mexiletine are negatively correlated.
+C. atrioventricular block and mexiletine are associated.
+D. atrioventricular block and mexiletine have a drug interaction.
+E. atrioventricular block and mexiletine are used in cotreatment.
+F. atrioventricular block and mexiletine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
+"Determine which option can be inferred from the following passage.
+Passage: OBJECTIVE: Congenital long QT syndrome (LQTS) with in utero onset of the rhythm disturbances is associated with a poor prognosis. In this study we investigated a newborn patient with fetal bradycardia, 2:1 atrioventricular block and ventricular tachycardia soon after birth. METHODS: Mutational analysis and DNA sequencing were conducted in a newborn. The 2:1 atrioventricular block improved to 1:1 conduction only after intravenous lidocaine infusion or a high dose of mexiletine, which also controlled the ventricular tachycardia. RESULTS: A novel, spontaneous LQTS-3 mutation was identified in the transmembrane segment 6 of domain IV of the Na(v)1.5 cardiac sodium channel, with a G-->A substitution at codon 1763, which changed a valine (GTG) to a methionine (ATG). The proband was heterozygous but the mutation was absent in the parents and the sister. Expression of this mutant channel in tsA201 mammalian cells by site-directed mutagenesis revealed a persistent tetrodotoxin-sensitive but lidocaine-resistant current that was associated with a positive shift of the steady-state inactivation curve, steeper activation curve and faster recovery from inactivation. We also found a similar electrophysiological profile for the neighboring V1764M mutant. But, the other neighboring I1762A mutant had no persistent current and was still associated with a positive shift of inactivation. CONCLUSIONS: These findings suggest that the Na(v)1.5/V1763M channel dysfunction and possible neighboring mutants contribute to a persistent inward current due to altered inactivation kinetics and clinically congenital LQTS with perinatal onset of arrhythmias that responded to lidocaine and mexiletine.
+Options:
+A. atrioventricular block and lidocaine are positively correlated.
+B. atrioventricular block and lidocaine are negatively correlated.
+C. atrioventricular block and lidocaine are associated.
+D. atrioventricular block and lidocaine have a drug interaction.
+E. atrioventricular block and lidocaine are used in cotreatment.
+F. atrioventricular block and lidocaine have no known relation.
+Which option can be inferred?
+Option:",F,C,F,False
