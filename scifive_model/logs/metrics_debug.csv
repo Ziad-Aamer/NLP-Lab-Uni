@@ -1,0 +1,5 @@
+relation,support,precision,recall,f1,tp,fp,fn
+association,21,0.052632,0.047619,0.050000,1,18,20
+negative_correlation,12,0.000000,0.000000,0.000000,0,2,12
+positive_correlation,10,0.000000,0.000000,0.000000,0,4,10
+micro_average,43,0.040000,0.023256,0.029412,1,24,42
